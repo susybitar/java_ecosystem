@@ -6,10 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="341d4c1a-010b-4901-9197-301781d20682" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/clean_code/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio04/EmployeeProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/spring_framework/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/spring_framework/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_framework/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring_framework/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio01/Ejercicio01.java" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio01/Ejercicio01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio02/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio02/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio02/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio02/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio03/Ejercicio03.java" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio03/Ejercicio03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio04/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio04/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_code/src/exercises/ejercicio_01/ejercicio01.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/spring_framework/mvnw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/spring_framework/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_framework/pom.xml" afterDir="false" />
@@ -92,20 +100,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.future-space [package].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.FutureSpaceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sbitarazevedo/IdeaProjects/future-space/screenshots/ej04_intro_spring_opcional/ej03_intro_spring&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.ejercicio01.executor": "Run",
+    "Maven.future-space [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.FutureSpaceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sbitarazevedo/IdeaProjects/future-space/screenshots/ej04_intro_spring_opcional/ej03_intro_spring"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sbitarazevedo\IdeaProjects\future-space\screenshots\ej04_intro_spring_opcional\ej03_intro_spring" />
@@ -115,11 +125,11 @@
       <recent name="C:\Users\sbitarazevedo\IdeaProjects\future-space\src\main\java\com\appsdeveloperblog\app\ws\futurespace\exercises\ej03_intro_spring\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sbitarazevedo\IdeaProjects\future-space\clean_code\src" />
       <recent name="C:\Users\sbitarazevedo\IdeaProjects\future-space\spring_framework" />
       <recent name="C:\Users\sbitarazevedo\IdeaProjects\future-space\screenshots\exercises" />
       <recent name="C:\Users\sbitarazevedo\IdeaProjects\future-space\screenshots\opcionales" />
       <recent name="C:\Users\sbitarazevedo\IdeaProjects\future-space\postman" />
-      <recent name="C:\Users\sbitarazevedo\IdeaProjects\future-space\screenshots\ej03_intro_spring\error_validation" />
     </key>
   </component>
   <component name="SharedIndexes">
