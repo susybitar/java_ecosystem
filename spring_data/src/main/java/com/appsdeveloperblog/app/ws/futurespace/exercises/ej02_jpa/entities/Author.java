@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.app.ws.futurespace.exercises.ej02_jpa;
+package com.appsdeveloperblog.app.ws.futurespace.exercises.ej02_jpa.entities;
 
 import jakarta.persistence.*;
 
