@@ -27,5 +27,5 @@ Este es el proyecto más avanzado del repositorio. Se trata de un motor de juego
 * **Algoritmo de Evaluación:** Implementación de un sistema de "marcado" mediante arrays booleanos para garantizar la precisión matemática en casos de colores duplicados.
 * **Inmutabilidad:** Protección del código secreto mediante `Collections.unmodifiableList`.
 
----
+--
 **Desarrollado por:** Susana Bitar
