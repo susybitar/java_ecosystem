@@ -17,14 +17,16 @@ El código se organiza siguiendo principios de **Clean Code** y el patrón de ca
 - **[Servicios](./src/main/java/com/appsdeveloperblog/app/ws/futurespace/exercises/exercises_opcionales/service/)**:
   Capa de lógica de negocio que gestiona la transformación entre entidades y modelos, desacoplando los controladores de
   los repositorios.
-- *
-  *[Repositorios](./src/main/java/com/appsdeveloperblog/app/ws/futurespace/exercises/exercises_opcionales/repositories/)
-  **:
-  Interfaces que extienden de `JpaRepository`, encargadas de la persistencia de datos en MySQL.
-- *
-  *[Controladores (API REST)](./src/main/java/com/appsdeveloperblog/app/ws/futurespace/exercises/exercises_opcionales/controller/)
-  **: Endpoints especializados para CRUD y consultas. Refactorizados para ser "delgados" y delegar la lógica al
-  servicio.
+-
+    *
+*[Repositorios](./src/main/java/com/appsdeveloperblog/app/ws/futurespace/exercises/exercises_opcionales/repositories/)
+**:
+Interfaces que extienden de `JpaRepository`, encargadas de la persistencia de datos en MySQL.
+-
+    *
+*[Controladores (API REST)](./src/main/java/com/appsdeveloperblog/app/ws/futurespace/exercises/exercises_opcionales/controller/)
+**: Endpoints especializados para CRUD y consultas. Refactorizados para ser "delgados" y delegar la lógica al
+servicio.
 
 ## Implementación de Consultas (Query Engine)
 
@@ -37,10 +39,11 @@ Se han desarrollado diferentes estrategias para la recuperación de datos, desta
 
 ## Gestión de Personas y Arquitectura Limpia (Ejercicios Opcionales)
 
-Se ha implementado un sistema robusto para la gestión de ciudadanos siguiendo estándares de arquitectura empresarial:
+Se ha implementado un sistema robusto para la gestión de personas siguiendo estándares de arquitectura empresarial:
 
 - **Desacoplamiento con DTOs**: Uso de objetos de transferencia para proteger la entidad de persistencia. La salida JSON
-  está organizada mediante `@JsonPropertyOrder` para mayor legibilidad.
+  está organizada mediante `@JsonPropertyOrder` para garantizar un orden profesional (ID, DNI, nombres, apellidos,
+  nombre completo, fecha y género).
 - **Validación Robusta**: Validación doble en `PersonRequest` y `Person` usando `@NotBlank`, `@Past`, `@Size` y
   `@Pattern` (Regex para DNI).
 - **Manejo de Excepciones**:
