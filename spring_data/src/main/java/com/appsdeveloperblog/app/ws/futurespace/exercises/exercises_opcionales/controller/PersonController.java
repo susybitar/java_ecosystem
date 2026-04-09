@@ -5,6 +5,7 @@ import com.appsdeveloperblog.app.ws.futurespace.exercises.exercises_opcionales.r
 import com.appsdeveloperblog.app.ws.futurespace.exercises.exercises_opcionales.exceptions.PersonServiceException;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,8 +36,8 @@ public class PersonController {
      * Soporta representaciones en JSON y XML.
      * Si la base de datos no contiene registros, se lanza una excepcion de servicio
      * que es capturada globalmente para retornar un error 404 estructurado.
-     * * @return Lista de entidades Person persistidas.
      *
+     * @return Lista de entidades Person persistidas.
      * @throws PersonServiceException Si la lista de personas esta vacia.
      */
     @GetMapping(produces = {
@@ -58,5 +59,25 @@ public class PersonController {
         System.out.println("El usuario " + persons.get(0).getFullName() + " ha realizado la accion: Consulta de datos GET");
 
         return persons;
+    }
+
+    /**
+     * Busca una persona especifica por su DNI.
+     * URL: GET /persons/{dni}
+     *
+     * @param dni El documento de identidad capturado de la URL.
+     * @return La entidad Person correspondiente al DNI.
+     * @throws PersonServiceException Si el DNI no existe en la base de datos.
+     */
+    @GetMapping(value = "/{dni}",
+            produces = {
+                    MediaType.APPLICATION_JSON_VALUE,
+                    MediaType.APPLICATION_XML_VALUE
+            })
+    public Person getPersonByDni(@PathVariable String dni) {
+
+        // Usamos el metodo del repositorio para buscar. Si no hay nadie, lanzamos error limpio.
+        return personRepository.findByDni(dni)
+                .orElseThrow(() -> new PersonServiceException("Error 404: No se encontro la persona con DNI " + dni));
     }
 }

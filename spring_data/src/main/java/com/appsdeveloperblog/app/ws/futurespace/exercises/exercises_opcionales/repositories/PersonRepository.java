@@ -8,17 +8,18 @@ import java.util.Optional;
 
 /**
  * Repositorio de persistencia para la entidad Person.
- * Proporciona las operaciones CRUD básicas gracias a JpaRepository.
+ * Extiende de JpaRepository para obtener todas las operaciones CRUD básicas.
  */
 @Repository
 public interface PersonRepository extends JpaRepository<Person, Long> {
 
     /**
-     * Busca una persona en la base de datos por su DNI.
-     * Utilizado principalmente para el Ejercicio 3 (Actualización).
+     * Método de consulta derivado (Query Method) para buscar por DNI.
+     * Spring Data JPA genera la consulta SQL automáticamente:
+     * "SELECT * FROM persons_opcional WHERE dni = ?"
      *
-     * @param dni Documento de identidad a buscar.
-     * @return Un Optional que contiene la persona si es encontrada.
+     * @param dni El documento de identidad a buscar.
+     * @return Un Optional que puede contener la persona o estar vacío si no existe.
      */
     Optional<Person> findByDni(String dni);
 }

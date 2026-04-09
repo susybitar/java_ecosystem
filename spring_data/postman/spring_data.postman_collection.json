@@ -1,0 +1,1430 @@
+{
+  "info": {
+    "_postman_id": "418ce9ec-2324-4abb-b930-20eaad1a48c6",
+    "name": "spring_data",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53264170",
+    "_collection_link": "https://go.postman.co/collection/53264170-418ce9ec-2324-4abb-b930-20eaad1a48c6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "exercises",
+      "item": [
+        {
+          "name": "ej01_jpa_opcional",
+          "item": [
+            {
+              "name": "GET",
+              "item": [
+                {
+                  "name": "Person Details",
+                  "request": {
+                    "auth": {
+                      "type": "noauth"
+                    },
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/xml",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "http://localhost:8080/persons",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "8080",
+                      "path": [
+                        "persons"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Root Details",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/xml",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "http://localhost:8080/",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "8080",
+                      "path": [
+                        ""
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "error_validation",
+              "item": [
+                {
+                  "name": "No Records Exist",
+                  "item": [
+                    {
+                      "name": "No Records Exist",
+                      "request": {
+                        "auth": {
+                          "type": "noauth"
+                        },
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/xml",
+                            "type": "text"
+                          }
+                        ],
+                        "url": {
+                          "raw": "http://localhost:8080/persons",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ej02_jpa_opcional",
+          "item": [
+            {
+              "name": "GET",
+              "item": [
+                {
+                  "name": "Consult Persons",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/xml",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "http://localhost:8080/persons",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "8080",
+                      "path": [
+                        "persons"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Root Details",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/xml",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "http://localhost:8080/",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "8080",
+                      "path": [
+                        ""
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "POST",
+              "item": [
+                {
+                  "name": "Save Person",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=Susana&lastName=Bitar&secondLastName=Azevedo&birthDate=1995-01-01&gender=M",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "8080",
+                      "path": [
+                        "persons",
+                        "envioFormulario"
+                      ],
+                      "query": [
+                        {
+                          "key": "dni",
+                          "value": "12345678S",
+                          "type": "text"
+                        },
+                        {
+                          "key": "firstName",
+                          "value": "Susana"
+                        },
+                        {
+                          "key": "lastName",
+                          "value": "Bitar"
+                        },
+                        {
+                          "key": "secondLastName",
+                          "value": "Azevedo"
+                        },
+                        {
+                          "key": "birthDate",
+                          "value": "1995-01-01"
+                        },
+                        {
+                          "key": "gender",
+                          "value": "M"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Error Validation",
+              "item": [
+                {
+                  "name": "Name",
+                  "item": [
+                    {
+                      "name": "Firstname",
+                      "item": [
+                        {
+                          "name": "Incorrect Name",
+                          "request": {
+                            "method": "POST",
+                            "header": [],
+                            "url": {
+                              "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=S&lastName=Bitar&secondLastName=Azevedo&birthDate=1995-01-01&gender=M",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "envioFormulario"
+                              ],
+                              "query": [
+                                {
+                                  "key": "dni",
+                                  "value": "12345678S"
+                                },
+                                {
+                                  "key": "firstName",
+                                  "value": "S"
+                                },
+                                {
+                                  "key": "lastName",
+                                  "value": "Bitar"
+                                },
+                                {
+                                  "key": "secondLastName",
+                                  "value": "Azevedo"
+                                },
+                                {
+                                  "key": "birthDate",
+                                  "value": "1995-01-01"
+                                },
+                                {
+                                  "key": "gender",
+                                  "value": "M"
+                                }
+                              ]
+                            }
+                          },
+                          "response": []
+                        },
+                        {
+                          "name": "Empty Name",
+                          "request": {
+                            "method": "POST",
+                            "header": [],
+                            "url": {
+                              "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=&lastName=Bitar&secondLastName=Azevedo&birthDate=1995-01-01&gender=M",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "envioFormulario"
+                              ],
+                              "query": [
+                                {
+                                  "key": "dni",
+                                  "value": "12345678S"
+                                },
+                                {
+                                  "key": "firstName",
+                                  "value": ""
+                                },
+                                {
+                                  "key": "lastName",
+                                  "value": "Bitar"
+                                },
+                                {
+                                  "key": "secondLastName",
+                                  "value": "Azevedo"
+                                },
+                                {
+                                  "key": "birthDate",
+                                  "value": "1995-01-01"
+                                },
+                                {
+                                  "key": "gender",
+                                  "value": "M"
+                                }
+                              ]
+                            }
+                          },
+                          "response": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Last Name",
+                      "item": [
+                        {
+                          "name": "Incorrect Last Name",
+                          "request": {
+                            "method": "POST",
+                            "header": [],
+                            "url": {
+                              "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=Susana&lastName=B&secondLastName=Azevedo&birthDate=1995-01-01&gender=M",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "envioFormulario"
+                              ],
+                              "query": [
+                                {
+                                  "key": "dni",
+                                  "value": "12345678S"
+                                },
+                                {
+                                  "key": "firstName",
+                                  "value": "Susana"
+                                },
+                                {
+                                  "key": "lastName",
+                                  "value": "B"
+                                },
+                                {
+                                  "key": "secondLastName",
+                                  "value": "Azevedo"
+                                },
+                                {
+                                  "key": "birthDate",
+                                  "value": "1995-01-01"
+                                },
+                                {
+                                  "key": "gender",
+                                  "value": "M"
+                                }
+                              ]
+                            }
+                          },
+                          "response": []
+                        },
+                        {
+                          "name": "Empty Last Name",
+                          "request": {
+                            "method": "POST",
+                            "header": [],
+                            "url": {
+                              "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=Susana&lastName=&secondLastName=Azevedo&birthDate=1995-01-01&gender=M",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "envioFormulario"
+                              ],
+                              "query": [
+                                {
+                                  "key": "dni",
+                                  "value": "12345678S"
+                                },
+                                {
+                                  "key": "firstName",
+                                  "value": "Susana"
+                                },
+                                {
+                                  "key": "lastName",
+                                  "value": ""
+                                },
+                                {
+                                  "key": "secondLastName",
+                                  "value": "Azevedo"
+                                },
+                                {
+                                  "key": "birthDate",
+                                  "value": "1995-01-01"
+                                },
+                                {
+                                  "key": "gender",
+                                  "value": "M"
+                                }
+                              ]
+                            }
+                          },
+                          "response": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Second Last Name",
+                      "item": []
+                    }
+                  ]
+                },
+                {
+                  "name": "DNI",
+                  "item": [
+                    {
+                      "name": "Incorrect DNI",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/persons/envioFormulario?dni=12345&firstName=Susana&lastName=Bitar&secondLastName=Azevedo&birthDate=1995-01-01&gender=M",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "envioFormulario"
+                          ],
+                          "query": [
+                            {
+                              "key": "dni",
+                              "value": "12345"
+                            },
+                            {
+                              "key": "firstName",
+                              "value": "Susana"
+                            },
+                            {
+                              "key": "lastName",
+                              "value": "Bitar"
+                            },
+                            {
+                              "key": "secondLastName",
+                              "value": "Azevedo"
+                            },
+                            {
+                              "key": "birthDate",
+                              "value": "1995-01-01"
+                            },
+                            {
+                              "key": "gender",
+                              "value": "M"
+                            }
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Empty DNI",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/persons/envioFormulario?dni=&firstName=Susana&lastName=Bitar&secondLastName=Azevedo&birthDate=1995-01-01&gender=M",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "envioFormulario"
+                          ],
+                          "query": [
+                            {
+                              "key": "dni",
+                              "value": ""
+                            },
+                            {
+                              "key": "firstName",
+                              "value": "Susana"
+                            },
+                            {
+                              "key": "lastName",
+                              "value": "Bitar"
+                            },
+                            {
+                              "key": "secondLastName",
+                              "value": "Azevedo"
+                            },
+                            {
+                              "key": "birthDate",
+                              "value": "1995-01-01"
+                            },
+                            {
+                              "key": "gender",
+                              "value": "M"
+                            }
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Date",
+                  "item": [
+                    {
+                      "name": "Incorrect Date",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=Susana&lastName=Bitar&secondLastName=Azevedo&birthDate=2027-01-01&gender=M",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "envioFormulario"
+                          ],
+                          "query": [
+                            {
+                              "key": "dni",
+                              "value": "12345678S"
+                            },
+                            {
+                              "key": "firstName",
+                              "value": "Susana"
+                            },
+                            {
+                              "key": "lastName",
+                              "value": "Bitar"
+                            },
+                            {
+                              "key": "secondLastName",
+                              "value": "Azevedo"
+                            },
+                            {
+                              "key": "birthDate",
+                              "value": "2027-01-01"
+                            },
+                            {
+                              "key": "gender",
+                              "value": "M"
+                            }
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Empty Date",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=Susana&lastName=Bitar&secondLastName=Azevedo&birthDate=&gender=M",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "envioFormulario"
+                          ],
+                          "query": [
+                            {
+                              "key": "dni",
+                              "value": "12345678S"
+                            },
+                            {
+                              "key": "firstName",
+                              "value": "Susana"
+                            },
+                            {
+                              "key": "lastName",
+                              "value": "Bitar"
+                            },
+                            {
+                              "key": "secondLastName",
+                              "value": "Azevedo"
+                            },
+                            {
+                              "key": "birthDate",
+                              "value": ""
+                            },
+                            {
+                              "key": "gender",
+                              "value": "M"
+                            }
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Gender",
+                  "item": [
+                    {
+                      "name": "Incorrect Gernder",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=Susana&lastName=Bitar&secondLastName=Azevedo&birthDate=1995-01-01&gender=Z",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "envioFormulario"
+                          ],
+                          "query": [
+                            {
+                              "key": "dni",
+                              "value": "12345678S"
+                            },
+                            {
+                              "key": "firstName",
+                              "value": "Susana"
+                            },
+                            {
+                              "key": "lastName",
+                              "value": "Bitar"
+                            },
+                            {
+                              "key": "secondLastName",
+                              "value": "Azevedo"
+                            },
+                            {
+                              "key": "birthDate",
+                              "value": "1995-01-01"
+                            },
+                            {
+                              "key": "gender",
+                              "value": "Z"
+                            }
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Empty Gender",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/persons/envioFormulario?dni=12345678S&firstName=Susana&lastName=Bitar&secondLastName=Azevedo&birthDate=1995-01-01&gender=",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "envioFormulario"
+                          ],
+                          "query": [
+                            {
+                              "key": "dni",
+                              "value": "12345678S"
+                            },
+                            {
+                              "key": "firstName",
+                              "value": "Susana"
+                            },
+                            {
+                              "key": "lastName",
+                              "value": "Bitar"
+                            },
+                            {
+                              "key": "secondLastName",
+                              "value": "Azevedo"
+                            },
+                            {
+                              "key": "birthDate",
+                              "value": "1995-01-01"
+                            },
+                            {
+                              "key": "gender",
+                              "value": ""
+                            }
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ej03_jpa_opcional",
+          "item": [
+            {
+              "name": "GET",
+              "item": [
+                {
+                  "name": "All Success",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/xml",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "http://localhost:8080/persons",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "8080",
+                      "path": [
+                        "persons"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "DNI Success",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/xml",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "http://localhost:8080/persons/10000000V",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "8080",
+                      "path": [
+                        "persons",
+                        "10000000V"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "PUT",
+              "item": [
+                {
+                  "name": "Update Person",
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan update\",\r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:8080/persons/10000000V",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "8080",
+                      "path": [
+                        "persons",
+                        "10000000V"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Error Validation",
+              "item": [
+                {
+                  "name": "DNI",
+                  "item": [
+                    {
+                      "name": "GET",
+                      "item": [
+                        {
+                          "name": "DNI Not Found",
+                          "request": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/xml",
+                                "type": "text"
+                              }
+                            ],
+                            "url": {
+                              "raw": "http://localhost:8080/persons/00000000X",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "00000000X"
+                              ]
+                            }
+                          },
+                          "response": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "PUT",
+                      "item": [
+                        {
+                          "name": "DNI Not Found",
+                          "request": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\r\n    \"dni\": \"00000000X\", \r\n    \"firstName\": \"Intento\",\r\n    \"lastName\": \"Fallido\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "http://localhost:8080/persons/00000000X",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "00000000X"
+                              ]
+                            }
+                          },
+                          "response": []
+                        },
+                        {
+                          "name": "DNI Format",
+                          "request": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\r\n    \"dni\": \"\", \r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "http://localhost:8080/persons/10000000V",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "10000000V"
+                              ]
+                            }
+                          },
+                          "response": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Name",
+                  "item": [
+                    {
+                      "name": "Firstname",
+                      "item": [
+                        {
+                          "name": "Empty Firstname",
+                          "request": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"\", \r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "http://localhost:8080/persons/10000000V",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "10000000V"
+                              ]
+                            }
+                          },
+                          "response": []
+                        },
+                        {
+                          "name": "Firstname Format",
+                          "request": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"J\", \r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "http://localhost:8080/persons/10000000V",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "10000000V"
+                              ]
+                            }
+                          },
+                          "response": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Last Name",
+                      "item": [
+                        {
+                          "name": "Empty Last Name",
+                          "request": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"\", \r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "http://localhost:8080/persons/10000000V",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "10000000V"
+                              ]
+                            }
+                          },
+                          "response": []
+                        },
+                        {
+                          "name": "Last Name Format",
+                          "request": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"M\", \r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "http://localhost:8080/persons/10000000V",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "10000000V"
+                              ]
+                            }
+                          },
+                          "response": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Second Last Name",
+                      "item": [
+                        {
+                          "name": "Empty Second Last Name",
+                          "request": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"\", \r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "http://localhost:8080/persons/10000000V",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "10000000V"
+                              ]
+                            }
+                          },
+                          "response": []
+                        },
+                        {
+                          "name": "Second Last Name Format",
+                          "request": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"J\", \r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"H\"\r\n}",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            },
+                            "url": {
+                              "raw": "http://localhost:8080/persons/10000000V",
+                              "protocol": "http",
+                              "host": [
+                                "localhost"
+                              ],
+                              "port": "8080",
+                              "path": [
+                                "persons",
+                                "10000000V"
+                              ]
+                            }
+                          },
+                          "response": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Date",
+                  "item": [
+                    {
+                      "name": "Incorrect Date",
+                      "request": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"2050-01-01\", \r\n    \"gender\": \"H\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/persons/10000000V",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "10000000V"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Empty Date",
+                      "request": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"\", \r\n    \"gender\": \"H\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/persons/10000000V",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "10000000V"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Gender",
+                  "item": [
+                    {
+                      "name": "Incorrect Gender",
+                      "request": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"Z\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/persons/10000000V",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "10000000V"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Empty Gender",
+                      "request": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"dni\": \"10000000V\",\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"García\",\r\n    \"secondLastName\": \"Pérez\",\r\n    \"birthDate\": \"1980-05-20\",\r\n    \"gender\": \"\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/persons/10000000V",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "persons",
+                            "10000000V"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
